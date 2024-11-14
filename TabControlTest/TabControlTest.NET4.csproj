@@ -8,9 +8,10 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>TabControlTest</RootNamespace>
     <AssemblyName>TabControlTest</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -21,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -30,11 +32,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PagedControl, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PagedControl.2.2.0\lib\net35\PagedControl.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -67,6 +67,7 @@
     <EmbeddedResource Include="TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -79,9 +80,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TabControl\TabControl.csproj">
+    <ProjectReference Include="..\PagedControl\PagedControl.NET4.csproj">
+      <Project>{9fe68e49-f2ba-4266-a618-0d4c68512f13}</Project>
+      <Name>PagedControl.NET4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TabControl\TabControl.NET4.csproj">
       <Project>{5B5F96CF-56F2-4A42-AF81-14847D51BC52}</Project>
-      <Name>TabControl</Name>
+      <Name>TabControl.NET4</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

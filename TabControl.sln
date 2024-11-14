@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabControl", "TabControl\TabControl.csproj", "{5B5F96CF-56F2-4A42-AF81-14847D51BC52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabControl.NET4", "TabControl\TabControl.NET4.csproj", "{5B5F96CF-56F2-4A42-AF81-14847D51BC52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabControlTest", "TabControlTest\TabControlTest.csproj", "{75CD2FF3-0DDC-4EE9-B8AC-C0C68CDEC62F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabControlTest.NET4", "TabControlTest\TabControlTest.NET4.csproj", "{75CD2FF3-0DDC-4EE9-B8AC-C0C68CDEC62F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D70952FF-5075-452D-B029-8FF8F1FDF7D3}"
 	ProjectSection(SolutionItems) = preProject
@@ -16,7 +16,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		update documentation.ps1 = update documentation.ps1
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documentation", "Documentation\Documentation.csproj", "{FE354FEF-85B4-4A5B-A130-7DD226A9B015}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documentation.NET4", "Documentation\Documentation.NET4.csproj", "{FE354FEF-85B4-4A5B-A130-7DD226A9B015}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PagedControl.NET4", "PagedControl\PagedControl.NET4.csproj", "{9FE68E49-F2BA-4266-A618-0D4C68512F13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PagedControl.NET6", "PagedControl.NET6\PagedControl.NET6.csproj", "{70F8C802-388A-4319-91DE-AEFCE002AF6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabControl.NET6", "TabControl.NET6\TabControl.NET6.csproj", "{3C11C501-1EAB-40BA-9DB0-CE7187F6A963}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabControlTest.NET6", "TabControlTest.NET6\TabControlTest.NET6.csproj", "{119A0609-06FD-4376-90E9-263137C08ABF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +44,22 @@ Global
 		{FE354FEF-85B4-4A5B-A130-7DD226A9B015}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE354FEF-85B4-4A5B-A130-7DD226A9B015}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE354FEF-85B4-4A5B-A130-7DD226A9B015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FE68E49-F2BA-4266-A618-0D4C68512F13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FE68E49-F2BA-4266-A618-0D4C68512F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FE68E49-F2BA-4266-A618-0D4C68512F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FE68E49-F2BA-4266-A618-0D4C68512F13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F8C802-388A-4319-91DE-AEFCE002AF6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F8C802-388A-4319-91DE-AEFCE002AF6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F8C802-388A-4319-91DE-AEFCE002AF6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F8C802-388A-4319-91DE-AEFCE002AF6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C11C501-1EAB-40BA-9DB0-CE7187F6A963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C11C501-1EAB-40BA-9DB0-CE7187F6A963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C11C501-1EAB-40BA-9DB0-CE7187F6A963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C11C501-1EAB-40BA-9DB0-CE7187F6A963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{119A0609-06FD-4376-90E9-263137C08ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{119A0609-06FD-4376-90E9-263137C08ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{119A0609-06FD-4376-90E9-263137C08ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{119A0609-06FD-4376-90E9-263137C08ABF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5B5F96CF-56F2-4A42-AF81-14847D51BC52}</ProjectGuid>
+    <ProjectGuid>{9FE68E49-F2BA-4266-A618-0D4C68512F13}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Manina.Windows.Forms</RootNamespace>
-    <AssemblyName>TabControl</AssemblyName>
+    <AssemblyName>PagedControl</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PagedControl, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PagedControl.2.2.0\lib\net35\PagedControl.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -45,75 +42,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Designer\TabControlActionList.cs">
+    <Compile Include="Designer\BaseGlyph.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Designer\SelectedTabEditor.cs">
+    <Compile Include="Designer\ButtonGlyph.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Designer\TextDirectionEditor.cs">
+    <Compile Include="Designer\GlyphToolBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Designer\TabLocationEditor.cs">
+    <Compile Include="Designer\LabelGlyph.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Designer\TextDirectionSelector.cs">
+    <Compile Include="Designer\PageContainerDesigner.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Designer\TabLocationSelector.cs">
+    <Compile Include="Designer\SelectedPageEditor.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Enums.cs" />
+    <Compile Include="Designer\SeparatorGlyph.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="EventArgs.cs" />
-    <Compile Include="ExtensionMethods.cs" />
-    <Compile Include="HitResult.cs">
+    <Compile Include="PagedControl.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
+    <Compile Include="Designer\PagedControlDesigner.cs">
+      <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Renderer\NoirRenderer.cs" />
-    <Compile Include="TabControl.cs">
+    <Compile Include="PageCollection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Page.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagedControlControlCollection.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Designer\TabControlDesigner.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Renderer\TabControlRenderer.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="TabCollection.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Tab.cs">
-      <SubType>Component</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TabControl.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-    <None Include="Resources\close.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\down_arrow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\left_arrow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\right_arrow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\up_arrow.png" />
+    <EmbeddedResource Include="PagedControl.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
